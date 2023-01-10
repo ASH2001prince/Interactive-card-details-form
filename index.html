@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="first-page">
+        <div class="all-pictures">
+          <picture>
+            <source
+              class="desktop-img"
+              media="(min-width: 700px)"
+              srcset="images/bg-main-desktop.png"
+            />
+            <img
+              class="mobile-img"
+              src="images/bg-main-mobile.png"
+              alt="background picture"
+            />
+          </picture>
+          <div class="first-card">
+            <img class="back-img" src="images/bg-card-back.png" alt="" />
+            <div class="cvc">
+              <span id="live-cvc">000</span>
+            </div>
+          </div>
+          <div class="second-card">
+            <img
+              class="front-img"
+              src="images/bg-card-front.png"
+              alt="front card"
+            />
+            <div>
+              <img class="logo" src="images/card-logo.svg" alt="two bulles" />
+            </div>
+            <div>
+              <h3>0000 0000 0000 0000</h3>
+            </div>
+            <div>
+              <p id="the-name">Jane Appleseed</p>
+            </div>
+            <div>
+              <span id="live-date">00/00</span>
+            </div>
+          </div>
+        </div>
+        <article id="article">
+          <form action="">
+            <label for="name">Cardholder Name</label>
+            <input id="name" type="text" placeholder="e.g. Jane Appleseed" />
+            <p id="caution">Wrong format, letters only</p>
+            <label for="number">Card Number</label>
+            <input
+              id="number"
+              type="pattern"
+              placeholder="e.g. 1234 5678 9123 0000"
+              maxlength="19"
+            />
+            <p id="caution1">Wrong format, numbers only</p>
+            <div class="grid">
+              <div>
+                <label for="exp">Exp. Date</label>
+                <label for="mm/yy">(MM/YY)</label>
+                <label for="cvc">CVC</label>
+              </div>
+              <div>
+                <input id="exp" type="number" placeholder="MM" />
+                <input id="mm/yy" type="number" placeholder="YY" />
+                <input id="cvc" type="number" placeholder="e.g. 123" />
+              </div>
+            </div>
+            <div class="caution">
+              <p id="blank-exp">Can`t be blank</p>
+              <p id="wrongCvc">Wrong CVC</p>
+            </div>
+            <button id="btn">Confirm</button>
+          </form>
+        </article>
+        <div id="container-second-page"></div>
+      </section>
+      <!-- Completed state start -->
+      <section class="second-page">
+        <img class="success" src="images/icon-complete.svg" alt="" />
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <button id="btn2">Continue/ Add Again</button>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a target="_blank" href="https://www.instagram.com/ashhilalo/">ASH</a>.
+    </div>
+    <div id="root"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
