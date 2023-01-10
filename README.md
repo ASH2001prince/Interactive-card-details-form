@@ -6,8 +6,8 @@
 
 ### Links
 
-- Solution URL: [https://github.com/ASH2001prince/interactive-rating-component.git]
-- Live Site URL: [https://ash2001prince.github.io/interactive-rating-component/]
+- Solution URL: [https://github.com/ASH2001prince/Interactive-card-details-form.git]
+- Live Site URL: [https://ash2001prince.github.io/Interactive-card-details-form/]
 
 ### Built with
 
